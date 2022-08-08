@@ -1,0 +1,33 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navname{
+    float: left;
+    width: 40%;
+}
+
+.navlink{
+    float: right;
+    width: 60%;
+}
+
+.navlink ul{
+    margin-left: -30px;
+}
+
+.navlink li{
+    display: inline;
+    padding-left: 20px;
+    font-size: large;
+}
+
+a:hover {
+    
+}
