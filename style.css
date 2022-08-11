@@ -13,6 +13,28 @@
     width: 40%;
 }
 
+h1{
+    position: relative;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    width: 44%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 1px;
+    left: 28%;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+h1:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .navlink{
     float: right;
     width: 60%;
@@ -20,7 +42,7 @@
 
 .navlink ul{
     margin-left: -30px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .navlink li{
@@ -31,9 +53,9 @@
 
 a{
     text-decoration: none;
-    transition: font-size 1s, padding 1s;
     display: inline-block;
     position: relative;
+
 }
 
 a::after{
@@ -42,7 +64,7 @@ a::after{
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: 25%;
     left: 0;
     background-color: white;
     transform-origin: bottom right;
